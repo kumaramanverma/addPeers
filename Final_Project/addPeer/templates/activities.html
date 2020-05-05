@@ -1,0 +1,132 @@
+<html>
+<thead>
+<title>ADD PEERS</title>
+<style>
+.seebound{
+border:1px solid red;
+}
+table {
+margin-left: auto;
+margin-right: auto;
+}​
+.text{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;  
+}
+.nav{
+width:100%;
+}
+.navBorder{
+border-bottom: 5px solid #c10000;
+}
+.titleFont {
+padding-left:0.5%;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+}
+.tabClass{
+    margin-top:10%;
+    }
+table {
+margin-left: auto;
+margin-right: auto;
+}​
+.tableBound{
+border: 5px solid #ff4949;
+padding-top:2%;
+padding-bottom:2%;
+padding-left:1%;
+padding-right:1%;
+border-radius:10px;
+}
+.inputCss{
+    border:none;
+    border-bottom: 1px solid #ff4949;
+}
+.inputText{
+    font-size:20px;
+}
+.tdCss{
+    margin-top:4%;
+}
+.buttonCSS{
+    border:none;
+     border-bottom: 1px solid #ff4949;
+     cursor: pointer;
+}
+.tdMarg{
+padding-top:5%;%
+
+}
+</style>
+</head>
+<body class="text">
+
+<div class="nav navBorder">
+<span class="titleFont">Add Peers</span>
+</div>
+
+
+<form action='logOut' style="margin-top:1%; float:right;">
+<button class="buttonCSS text" type='submit'><span style="font-size:20px;">Sign Out</span></button>
+</form>
+
+
+
+<div class="tabClass" style="width:100%;">
+<form action='addPeer' method="post">
+    {% csrf_token %}
+<table >
+<tr class="inputText">
+<td class="tdMarg"><span>First Name: </span></td>
+<td class="tdMarg">
+<input class="inputCss" type="text"  name="firstName">
+</td>
+</tr>
+
+<tr class="inputText"> 
+<td class="tdMarg"><span>Last Name: </span></td>
+<td class="tdMarg">
+<input class="inputCss" type="text"  name="lastName">
+</td>
+</tr>
+
+<tr class="inputText">
+<td class="tdMarg"><span>Date of Birth: </span></td>
+<td class="tdMarg">
+<input class="inputCss" type="date"  name="dob">
+</td>
+</tr>
+
+<tr class="inputText">
+<td class="tdMarg"><span>Company Name: </span></td>
+<td class="tdMarg">
+<input class="inputCss" type="text"  name="comName">
+</td>
+</tr>
+
+
+
+<td class="tdMarg">
+<button class="tdCss buttonCSS text" type='submit'>Submit</button>
+</td>
+</tr>
+
+</table>
+</form>
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>

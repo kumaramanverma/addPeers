@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>ADD PEERS</title>
+<style>
+.seebound{
+border:1px solid red;
+}
+table {
+margin-left: auto;
+margin-right: auto;
+}​
+.text{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;  
+}
+.nav{
+width:100%;
+}
+.tabClass{
+    margin-top:10%;
+    }
+.navBorder{
+border-bottom: 5px solid #c10000;
+}
+.titleFont {
+padding-left:0.5%;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+}
+.tableBound{
+border: 5px solid #ff4949;
+padding-top:2%;
+padding-bottom:2%;
+padding-left:1%;
+padding-right:1%;
+border-radius:10px;
+}
+.inputCss{
+    border:none;
+    border-bottom: 1px solid #ff4949;
+}
+.inputText{
+    font-size:20px;
+}
+.tdCss{
+    margin-top:4%;
+}
+.buttonCSS{
+    border:none;
+     border-bottom: 1px solid #ff4949;
+     cursor: pointer;
+}
+
+</style>
+</head>
+<body class="text">
+
+
+<div class="nav navBorder">
+<span class="titleFont">Add Peers</span>
+</div>
+
+
+
+
+<div class="tabClass" style="width:100%;">
+<form action='logIn' method='post'>
+{% csrf_token %}
+<table class="tableBound">
+
+<tr>
+<td class="inputText">
+<span>Login ID: </span><input class="inputCss" type="text" placeholder="User ID" name="userID">
+</td>
+</tr>
+
+<tr>
+<td  class="inputText">
+<span>Password: </span><input class="inputCss" type="text" placeholder="Password" name="password">
+</td>
+</tr>
+
+<tr>
+<td class="">
+<button class="tdCss buttonCSS text" type='submit'>Sign In</button>
+</td>
+
+<!--<td>
+<button class="tdCss buttonCSS text" type='submit'>Sign Up</button>
+</td>
+</tr>-->
+
+<tr>
+<td><h3>{{data}}</h3></td>
+</tr>
+</table>
+</form>
+</div>
+
+
+
+</body>
+</html>

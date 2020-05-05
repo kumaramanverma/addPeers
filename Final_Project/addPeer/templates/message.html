@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>ADD PEERS</title>
+<style>
+table {
+margin-left: auto;
+margin-right: auto;
+border: 5px solid #ff4949;
+padding-top:2%;
+padding-bottom:2%;
+padding-left:1%;
+padding-right:1%;
+border-radius:10px;
+}​
+.tableBord{
+border:1px solid black;
+}
+.tdCss{
+    margin-top:4%;
+}
+.buttonCSS{
+    border:none;
+     border-bottom: 1px solid #ff4949;
+     cursor: pointer;
+}
+.text{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;  
+}
+.nav{
+width:100%;
+}
+.navBorder{
+border-bottom: 5px solid #c10000;
+}
+.titleFont {
+padding-left:0.5%;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+}
+</style>
+</head>
+<body class="text">
+
+<div class="nav navBorder">
+<span class="titleFont">Add Peers</span>
+</div>
+
+<form action='logOut' style="margin-top:1%; float:right;">
+<button class="buttonCSS text" type='submit'><span style="font-size:20px;">Sign Out</span></button>
+</form>
+
+
+
+<form action='backToInsert' > 
+<table style="margin-top:2%;">
+<tr><td>{{message}}</td></tr>
+<tr><td>
+<button class="tdCss buttonCSS text" type='submit'>Back</button>
+</td></tr>
+</table>
+</form>
+
+
+
+</body>
+</html>
